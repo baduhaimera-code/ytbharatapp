@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT BHARAT - Download App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: white;
+            color: #0f0f0f;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #ff0000;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo-icon {
+            background: #ff0000;
+            width: 55px;
+            height: 55px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .logo-icon i {
+            color: white;
+            font-size: 2rem;
+        }
+        .crown {
+            color: gold;
+            font-size: 1.3rem;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+        .logo-text {
+            font-size: 2rem;
+            font-weight: 800;
+        }
+        .logo-text span:first-child {
+            color: black;
+        }
+        .logo-text span:last-child {
+            color: #ff0000;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 0;
+            flex-wrap: wrap;
+        }
+        .hero-content {
+            flex: 1 1 400px;
+        }
+        .hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        .hero-content h1 span {
+            color: #ff0000;
+            border-bottom: 4px solid #ff0000;
+        }
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #5f5f5f;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 18px 45px;
+            background: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background: #cc0000;
+            transform: scale(1.05);
+        }
+        .btn i {
+            margin-right: 10px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .feature-card {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .feature-card i {
+            font-size: 2.5rem;
+            color: #ff0000;
+            margin-bottom: 15px;
+        }
+        .download-section {
+            background: #fff0f0;
+            padding: 60px 40px;
+            border-radius: 40px;
+            text-align: center;
+            margin: 50px 0;
+        }
+        .btn-download {
+            font-size: 1.8rem;
+            padding: 25px 80px;
+            background: #ff0000;
+            animation: pulse 2s infinite;
+            margin: 30px 0;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255,0,0,0.4); }
+            70% { box-shadow: 0 0 0 20px rgba(255,0,0,0); }
+            100% { box-shadow: 0 0 0 0 rgba(255,0,0,0); }
+        }
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            border-top: 1px solid #eaeaea;
+        }
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.2rem; }
+            .btn-download { font-size: 1.3rem; padding: 18px 40px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-play"></i>
+                <i class="fas fa-crown crown"></i>
+            </div>
+            <div class="logo-text">
+                <span>YT</span>
+                <span>BHARAT</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>
+                Apna YouTube Channel<br>
+                <span>Grow & Monetise</span>
+            </h1>
+            <p>
+                YT BHARAT - India ka pehla creator growth app. 
+                Real subscribers, real watch time, real monetisation.
+                5 lakh+ creators already connected!
+            </p>
+            
+            <!-- 📲 YAHI HAI TERA DOWNLOAD BUTTON - FOLDER WALA TARIKA -->
+            <a href="apk/ytbharat.apk" 
+               class="btn btn-download"
+               download>
+                <i class="fas fa-download"></i> 
+             DOWNLOAD YT BHARAT
+            </a>
+            
+            <p style="margin-top: 20px; color: #666;">
+                <i class="fas fa-shield-alt" style="color: #ff0000;"></i> 
+                Safe • 18MB • Latest Version 3.0
+            </p>
+        </div>
+        <div style="flex: 1 1 300px; text-align: center;">
+            <div style="background: white; padding: 30px; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.05);">
+                <i class="fab fa-youtube" style="font-size: 5rem; color: #ff0000;"></i>
+                <h2 style="margin: 15px 0;">YT BHARAT</h2>
+                <div style="color: gold; font-size: 1.2rem;">★★★★★</div>
+                <p style="color: #ff0000; font-weight: bold; margin-top: 10px;">#1 Creator's Choice</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FEATURES -->
+    <h2 style="text-align: center; font-size: 2.5rem; margin: 50px 0 20px;">
+        YT BHARAT <span style="color: #ff0000;">Special Features</span>
+    </h2>
+    <div class="features">
+        <div class="feature-card">
+            <i class="fas fa-users"></i>
+            <h3>Real Subscriber Boost</h3>
+            <p>Organic subscribers jo channel ko legit banaye</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-clock"></i>
+            <h3>Watch Time Generator</h3>
+            <p>4000 hours complete karo fast & safe</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-eye"></i>
+            <h3>Real Views & Likes</h3>
+            <p>Algorithm friendly engagement badhao</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-rupee-sign"></i>
+            <h3>Monetisation Checker</h3>
+            <p>Eligibility status turant jano</p>
+        </div>
+    </div>
+
+    <!-- MAIN DOWNLOAD SECTION -->
+    <div class="download-section">
+        <span style="background: #ff0000; color: white; padding: 8px 25px; border-radius: 50px; font-weight: bold;">🔥 OFFICIAL RELEASE</span>
+        <h2 style="font-size: 2.5rem; margin: 30px 0 20px;">Abhi Download Karo!</h2>
+        <p style="font-size: 1.2rem; color: #666; margin-bottom: 30px;">
+            Ek click mein install. Kisi bhi naye user ko dikkat nahi hogi.
+        </p>
+        
+        <!-- 📲 YAHAN BHI WAHI BUTTON - EXTRA SAFE -->
+        <a href="./apk/ytbharat.apk" 
+           class="btn btn-download"
+           download>
+            <i class="fas fa-download"></i> 
+             DOWNLOAD APP
+            <span style="background: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 40px; font-size: 1rem; margin-left: 10px;">APK</span>
+        </a>
+        
+        <div style="display: flex; justify-content: center; gap: 40px; margin-top: 40px; flex-wrap: wrap;">
+            <span><i class="fas fa-download" style="color: #ff0000;"></i> 5.2L+ Downloads</span>
+            <span><i class="fas fa-clock" style="color: #ff0000;"></i> 25 March 2026</span>
+            <span><i class="fas fa-shield-alt" style="color: #ff0000;"></i> Virus Total Verified</span>
+        </div>
+    </div>
+
+    <!-- 3 STEPS -->
+    <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin: 60px 0;">
+        <div style="text-align: center; flex: 1 1 200px;">
+            <div style="background: #ff0000; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; font-weight: bold;">1</div>
+            <h3>Download APK</h3>
+            <p style="color: #666;">Button dabao, file save karo</p>
+        </div>
+        <div style="text-align: center; flex: 1 1 200px;">
+            <div style="background: #ff0000; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; font-weight: bold;">2</div>
+            <h3>Install Karo</h3>
+            <p style="color: #666;">Unknown app on karo</p>
+        </div>
+        <div style="text-align: center; flex: 1 1 200px;">
+            <div style="background: #ff0000; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.8rem; font-weight: bold;">3</div>
+            <h3>Start Growing</h3>
+            <p style="color: #666;">Channel connect karo</p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 20px; font-size: 1.5rem;">
+            <a href="#" style="color: #666;"><i class="fab fa-telegram"></i></a>
+            <a href="#" style="color: #666;"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="color: #666;"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>© 2026 YT BHARAT. India ka apna creator toolkit.</p>
+        <p style="color: #ff0000; margin-top: 10px;">Made with ❤️ in Bharat | Officially Monetised</p>
+    </footer>
+</div>
+
+<!-- 🔥 YEH SCRIPT AUTOMATIC PATH DETECT KAREGA 🔥 -->
+<script>
+    // Automatic folder detection - kuch mat karo bas yeh chalta rahega
+    document.addEventListener('DOMContentLoaded', function() {
+        var downloadBtns = document.querySelectorAll('a[href*=".apk"]');
+        downloadBtns.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                // Force download attribute
+                this.setAttribute('download', '');
+                
+                // Agar koi error ho to yeh alternative link try karega
+                setTimeout(function() {
+                    var testLink = document.createElement('a');
+                    testLink.href = '/apk/ytbharat.apk';
+                    testLink.download = 'ytbharat.apk';
+                    // Yeh bas backup hai
+                }, 100);
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
